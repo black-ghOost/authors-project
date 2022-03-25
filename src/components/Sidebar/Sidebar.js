@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import styles from './Sidebar.module.css';
 
 function Sidebar(props) {
     return (
-        <div>
+        <div className={styles.sidebar__container}>
             <ul>
-                <Link to="/authors"><li>Author</li></Link>
-                <Link to="/favorite-authors"><li>Favorite Author</li></Link>
+                <Link className={styles.text__decoration} to="/authors"><li>Author</li></Link>
+                <Link className={styles.text__decoration} to="/favorite-authors"><li>Favorite Author</li></Link>
             </ul>
         </div>
     );

@@ -1,0 +1,18 @@
+.sidebar__container{
+    background-color: #111827;
+}
+.sidebar__container ul{
+    margin: 200px auto;
+    list-style: none;
+}
+.sidebar__container li{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.sidebar__container li:hover{
+    color: #CAD5E2;
+}
+.text__decoration{
+    text-decoration: none;
+}
