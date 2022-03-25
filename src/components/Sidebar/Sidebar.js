@@ -5,7 +5,7 @@ function Sidebar(props) {
     return (
         <div className={styles.sidebar__container}>
             <ul>
-                <Link className={styles.text__decoration} to="/authors"><li>Author</li></Link>
+                <Link className={styles.text__decoration} to="/authors"><li>Authors</li></Link>
                 <Link className={styles.text__decoration} to="/favorite-authors"><li>Favorite Author</li></Link>
             </ul>
         </div>

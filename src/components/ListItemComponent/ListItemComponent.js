@@ -1,6 +1,6 @@
 import styles from './ListItemComponent.module.css';
 
-function ListItemComponent({author}) {
+function ListItemComponent({author, favAuthor, setFavAuthor}) {
     console.log('props.............', author);
     return (
         <div className={styles.list__container}>
