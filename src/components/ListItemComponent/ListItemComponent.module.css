@@ -5,3 +5,6 @@
 .list__container p{
     margin-bottom: 0px;
 }
+.add__button{
+    float: right;
+}

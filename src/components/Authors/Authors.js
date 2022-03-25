@@ -4,12 +4,17 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import ListItemComponent from '../ListItemComponent/ListItemComponent';
 import styles from './Authors.module.css';
+import {useStatus} from '../../context/ContextStatus';
 
 function Authors(props) {
     const [authors, setAuthors] = useState([]);
     const [page, setPage] = useState(1);
     const [totalPage, setTotalPage] = useState(1);
     const [totalItems, setTotalItems] = useState(1);
+
+    const {favAuthor, setFavAuthor} = useStatus();
+
+    console.log('fav author.....................', favAuthor);
 
     useEffect(() => {
         (async () => {
