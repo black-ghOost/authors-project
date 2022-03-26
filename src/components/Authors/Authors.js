@@ -39,7 +39,7 @@ function Authors(props) {
                 }
             </div>
             <div style={{textAlign: 'center', marginBottom: '30px', marginTop: '20px'}}>
-                <Pagination current={page} total={totalItems} pageSize={authors?.length} onChange={(page) => setPage(page)} />
+                <Pagination hideOnSinglePage responsive current={page} total={totalItems} pageSize={authors?.length ? authors?.length : 1} onChange={(page) => setPage(page)} />
             </div>
         </div>
     );

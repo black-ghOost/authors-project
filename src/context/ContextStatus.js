@@ -4,7 +4,7 @@ const ContextStatus = createContext();
 const ContextStatusProvider = ContextStatus.Provider;
 
 function StatusProvider({ children }){
-    const [favAuthor, setFavAuthor] = useState([]);
+    const [favAuthor, setFavAuthor] = useState(JSON.parse(localStorage.getItem('favAuthor')));
 
     return (
         <ContextStatusProvider value={{favAuthor, setFavAuthor}}>
