@@ -41,9 +41,9 @@ function ListItemComponent({author}) {
     console.log('favorite author', favAuthor);
     return (
         <div className={styles.list__container}>
-            <button className={styles.add__button} onClick={handleFavorite}>{is_exist ? 'Remove from favorite' : 'Add to favorite'}</button>
-            <p>Name: {author?.name}</p>
-            <p>Bio: {author?.bio}</p>
+            <button className={`${is_exist ? styles.remove__button : styles.add__button}`} onClick={handleFavorite}>{is_exist ? 'Remove from favorite' : 'Add to favorite'}</button>
+            <p><b>Name:</b> {author?.name}</p>
+            <p><b>Bio:</b> {author?.bio}</p>
         </div>
     );
 }

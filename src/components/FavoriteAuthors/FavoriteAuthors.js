@@ -1,6 +1,7 @@
 import { useStatus } from '../../context/ContextStatus';
 import ListItemComponent from '../ListItemComponent/ListItemComponent';
 import styles from '../Authors/Authors.module.css';
+import image from '../../assets/not_found.png';
 
 function FavoriteAuthors(props) {
     const {favAuthor, setFavAuthor} = useStatus();
@@ -14,7 +15,7 @@ function FavoriteAuthors(props) {
                 ))
             }
             </div>
-            {favAuthor?.length ? null : <p>No Favorite Author</p>}
+            {favAuthor?.length ? null : <div  className={styles.not_found}><img src={image} /></div>}
         </div>
     );
 }

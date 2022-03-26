@@ -1,5 +1,6 @@
 .list__container{
-    border: 1px solid black;
+    border: 1px solid #207398;
+    border-radius: 5px;
     padding: 10px;
 }
 .list__container p{
@@ -7,4 +8,33 @@
 }
 .add__button{
     float: right;
+    background-color: #FF6666;
+    color: white;
+    font-weight: 600;
+    padding: 3px 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add__button:hover{
+    border: 2px solid #FF6666;
+    background-color: white;
+    color: #FF6666;
+    transition: .2s;
+}
+.remove__button{
+    float: right;
+    background-color: #1B98F5;
+    color: white;
+    font-weight: 600;
+    padding: 3px 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.remove__button:hover{
+    border: 2px solid #1B98F5;
+    background-color: white;
+    color: #1B98F5;
+    transition: .2s;
 }
