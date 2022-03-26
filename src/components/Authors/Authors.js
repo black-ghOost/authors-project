@@ -14,7 +14,7 @@ function Authors(props) {
 
     const {favAuthor, setFavAuthor} = useStatus();
 
-    console.log('fav author.....................', favAuthor);
+    // console.log('fav author.....................', favAuthor);
 
     useEffect(() => {
         (async () => {

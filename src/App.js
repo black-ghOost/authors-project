@@ -11,8 +11,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Authors />} />
-            <Route path="authors" element={<Authors />} />
-            <Route path="favorite-authors" element={<FavoriteAuthors />} />
+            <Route path="/authors" element={<Authors />} />
+            <Route path="/favorite-authors" element={<FavoriteAuthors />} />
           </Route>
         </Routes>
       </BrowserRouter>
